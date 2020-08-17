@@ -5,3 +5,4 @@ import './constructor.js'
 // Поведенческие
 import './observer.js'
 import './chain.js'
+import './iterator.js'
