@@ -1,6 +1,7 @@
 // Порождающие
 import './singleton.js'
 import './constructor.js'
+import './builder.js'
 // Структурные
 // Поведенческие
 import './observer.js'
