@@ -24,7 +24,6 @@ class Director {
       .addParking('parking')
       .build()
   }
-  
 }
 
 class CarBuilder {
