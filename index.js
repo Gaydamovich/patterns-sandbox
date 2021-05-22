@@ -3,6 +3,7 @@ import './patterns/singleton.js'
 import './patterns/constructor.js'
 import './patterns/builder.js'
 // Структурные
+
 // Поведенческие
 import './patterns/observer.js'
 import './patterns/chain.js'
