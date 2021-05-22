@@ -81,5 +81,4 @@ class AbstractFigure {
 const circle = new Circle(new Red())
 const af = new AbstractFigure(circle)
 
-af.paint(new Blue())
 af.drawFigure()
