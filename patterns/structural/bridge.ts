@@ -75,6 +75,9 @@ class AbstractFigure {
   }
 }
 
+/**
+ * Наследование заменяем композицией
+ */
 const circle = new Circle(new Red())
 const af = new AbstractFigure(circle)
 
