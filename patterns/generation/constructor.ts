@@ -1,7 +1,6 @@
 /** Pattern Constructor (Конструктор) JS **/
 
-function Server(host, protocol = 'http') {
-  if (!new.target) return new Server(host, protocol)
+const Server = function (host: string, protocol = 'http') {
   this.host = host
   this.protocol = protocol
 }
@@ -11,5 +10,5 @@ Server.prototype.getUrl = function () {
 }
 
 console.group('Constructor')
-console.log(Server(window.location.host).getUrl())
+console.log(new Server(window.location.host).getUrl())
 console.groupEnd()
