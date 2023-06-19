@@ -13,7 +13,7 @@ interface Car {
 class BasicPaint implements Strategy {
   title = 'BasicPaint'
 
-  paint(color) {
+  paint(color: string) {
     // Преобразует переданный цвет в базовый окрас
     return `base-${color}`
   }
@@ -22,7 +22,7 @@ class BasicPaint implements Strategy {
 class SportPaint implements Strategy {
   title = 'SportPaint'
 
-  paint(color) {
+  paint(color: string) {
     // Преобразует переданный цвет в уникальный спортивный окрас
     return `metallic-${color}`
   }
@@ -32,15 +32,15 @@ class Audi implements Car {
   strategyPaint: Strategy
   color: string
 
-  constructor(strategy?: Strategy) {
+  constructor(strategy: Strategy) {
     this.strategyPaint = strategy
   }
 
-  setStrategyPaint(strategy) {
+  setStrategyPaint(strategy: Strategy) {
     this.strategyPaint = strategy
   }
 
-  paint(color) {
+  paint(color: string) {
     this.color = this.strategyPaint.paint(color)
   }
 }
